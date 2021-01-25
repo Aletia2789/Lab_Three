@@ -15,13 +15,12 @@ namespace Lab_Three
                 string userinput = Console.ReadLine();
                 int usernumber = int.Parse(userinput);
 
-                string answer1;
                 while (usernumber < 1 || usernumber > 100)
                 {
                     if (usernumber < 1 || usernumber > 100)
                     {
                         Console.Write("Entry Invalid. \nPlease enter a number between 1 and 100: ");
-                        answer1 = Console.ReadLine();
+                        string answer1 = Console.ReadLine();
                         usernumber = int.Parse(answer1);
                     }
 
